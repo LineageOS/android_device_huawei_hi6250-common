@@ -13,8 +13,8 @@
 // limitations under the License.
 
 cc_binary {
-    name: "lineage.touch@1.0-service.kirin970",
-    init_rc: ["lineage.touch@1.0-service.kirin970.rc"],
+    name: "lineage.touch@1.0-service.hi6250",
+    init_rc: ["lineage.touch@1.0-service.hi6250.rc"],
     defaults: ["hidl_defaults"],
     relative_install_path: "hw",
     srcs: [

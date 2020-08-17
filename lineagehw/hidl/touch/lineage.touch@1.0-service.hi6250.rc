@@ -1,0 +1,4 @@
+service touch-hal-1-0-hi6250 /system/bin/hw/lineage.touch@1.0-service.hi6250
+    class hal
+    user system
+    group system

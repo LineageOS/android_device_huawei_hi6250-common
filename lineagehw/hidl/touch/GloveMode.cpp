@@ -22,7 +22,7 @@ namespace vendor {
 namespace lineage {
 namespace touch {
 namespace V1_0 {
-namespace kirin970 {
+namespace hi6250 {
 
 static constexpr const char *kTouchGlovePath = "/sys/touchscreen/touch_glove";
 
@@ -41,7 +41,7 @@ Return<bool> GloveMode::setEnabled(bool enabled) {
     return !file.fail();
 }
 
-}  // namespace kirin970
+}  // namespace hi6250
 }  // namespace V1_0
 }  // namespace touch
 }  // namespace lineage

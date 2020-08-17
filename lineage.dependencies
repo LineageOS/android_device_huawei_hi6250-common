@@ -1,6 +1,6 @@
 [
   {
-    "repository": "android_kernel_huawei_kirin970",
-    "target_path": "kernel/huawei/kirin970"
+    "repository": "android_kernel_huawei_hi6250",
+    "target_path": "kernel/huawei/hi6250"
   }
 ]
