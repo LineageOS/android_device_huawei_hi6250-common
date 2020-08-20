@@ -60,15 +60,23 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     NfcNci \
     Tag \
-    com.android.nfc_extras
+    com.android.nfc_extras \
+    nfc_nci.pn54x.default
 
 PRODUCT_COPY_FILES += \
-    device/generic/common/nfc/libnfc-nci.conf:system/etc/libnfc-nci.conf
+    $(LOCAL_PATH)/nfc/libnfc_brcm_pra_L31.conf:system/etc/libnfc-brcm.conf \
+    $(LOCAL_PATH)/nfc/libnfc-nci.conf:system/etc/libnfc-nci.conf \
+    $(LOCAL_PATH)/nfc/libnfc_nxp_pra_L31.conf:system/etc/libnfc-nxp.conf \
+    $(LOCAL_PATH)/nfc/nfcscc_access.xml:system/etc/nfcscc_access.xml \
+    $(LOCAL_PATH)/nfc/nfcse_access.xml:system/etc/nfcse_access.xml \
 
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
+    frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
+    frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
+    frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
     $(LOCAL_PATH)/permissions/privapp-permissions_hi6250.xml:system/etc/permissions/privapp-permissions_hi6250.xml
 
 # Radio
