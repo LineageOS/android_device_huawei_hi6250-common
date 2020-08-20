@@ -1919,9 +1919,5 @@ etc/charger/public/800_serial/scp_charging_22.png
 etc/charger/public/800_serial/scp_charging_23.png
 -sbin/charger:sbin/chargeonlymode;rootfs|124a478904a2bd08e2a1e6c4a1bdc4ab124743d4
 
-# HotwordEnrollment
--priv-app/HotwordEnrollmentOKGoogleHI6403/HotwordEnrollmentOKGoogleHI6403.apk;PRESIGNED|8faf6d751b0f258678cb6ad9b5dff332483fbf82
--priv-app/HotwordEnrollmentXGoogleHI6403/HotwordEnrollmentXGoogleHI6403.apk;PRESIGNED|7e8376ad34941bd68194540d1977e36b1e1b6d74
-
 # Radio
 emui/base/global/ons.bin:ons.bin
