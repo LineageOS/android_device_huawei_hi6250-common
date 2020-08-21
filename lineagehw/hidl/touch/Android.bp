@@ -19,7 +19,6 @@ cc_binary {
     relative_install_path: "hw",
     srcs: [
         "GloveMode.cpp",
-        "KeyDisabler.cpp",
         "service.cpp"
     ],
     shared_libs: [
