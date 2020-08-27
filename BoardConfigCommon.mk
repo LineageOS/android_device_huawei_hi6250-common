@@ -70,7 +70,7 @@ TARGET_USES_HWC2 := true
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(VENDOR_PATH)/framework_manifest.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_hi6250
+TARGET_INIT_VENDOR_LIB := //$(VENDOR_PATH):libinit_hi6250
 TARGET_RECOVERY_DEVICE_MODULES := libinit_hi6250
 
 # Partitions
