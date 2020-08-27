@@ -26,6 +26,6 @@ LOCAL_C_INCLUDES := \
     bootable/recovery/otautil/include
 
 LOCAL_MODULE := librecovery_updater_huawei
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 
 include $(BUILD_STATIC_LIBRARY)
