@@ -78,11 +78,11 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml
 
 # Radio
-PRODUCT_PACKAGES += \
-    qti-telephony-common
+#PRODUCT_PACKAGES += \
+#    qti-telephony-common
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+#PRODUCT_BOOT_JARS += \
+#    telephony-ext
 
 # Recovery
 PRODUCT_PACKAGES += \
