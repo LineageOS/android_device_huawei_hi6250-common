@@ -15,6 +15,10 @@ on fs
     mount none /system/etc/audio_policy_configuration.xml /vendor/etc/audio_policy_configuration.xml bind
 
 on post-fs-data
+    mkdir /data/sec_storage_data 0700 system system
+    restorecon /data/sec_storage_data
+    mkdir /data/sec_storage_data_users 0700 system system
+    restorecon /data/sec_storage_data_users
     start teecd
 
 on property:ro.lineage.device=*

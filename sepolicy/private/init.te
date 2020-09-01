@@ -2,16 +2,19 @@
 allow init {
     hisee_data_file
     splash2_data_file
+    teecd_data_file
 }:dir mounton;
 
 allow init {
     hisee_data_file
     splash2_data_file
+    teecd_data_file
 }:filesystem { getattr mount relabelfrom relabelto };
 
 allow {
     hisee_data_file
     splash2_data_file
+    teecd_data_file
 } self:filesystem associate;
 
 # Allow init to mount vendor configs
