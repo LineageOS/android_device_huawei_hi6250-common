@@ -519,6 +519,11 @@ public class HwExtTelephony extends IExtTelephony.Stub {
         // I hope we don't use this
     }
 
+    public String getPropertyValueString(String,String) {
+        // I hope we don't use this
+        return null;
+    }
+
     private PhoneAccountHandle subscriptionIdToPhoneAccountHandle(final int subId) {
         final Iterator<PhoneAccountHandle> phoneAccounts =
                 mTelecomManager.getCallCapablePhoneAccounts().listIterator();
