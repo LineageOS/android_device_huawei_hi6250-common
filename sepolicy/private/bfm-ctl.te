@@ -1,5 +1,5 @@
 type bfm-ctl, coredomain, domain;
-type bfm-ctl_exec, exec_type, file_type;
+type bfm-ctl_exec, exec_type, file_type, system_file_type;
 
 # Allow for transition from init domain to bfm-ctl
 init_daemon_domain(bfm-ctl)

@@ -1,5 +1,5 @@
 type shal_lineage_touch_default, coredomain, domain;
 hal_server_domain(shal_lineage_touch_default, hal_lineage_touch)
 
-type shal_lineage_touch_default_exec, exec_type, file_type;
+type shal_lineage_touch_default_exec, exec_type, file_type, system_file_type;
 init_daemon_domain(shal_lineage_touch_default)
