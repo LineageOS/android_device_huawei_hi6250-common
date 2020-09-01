@@ -1,6 +1,7 @@
 import /vendor/etc/init/${ro.bootmode}/init.${ro.bootmode}.rc
 
 on init
+    wait /dev/block/platform/${ro.boot.boot_devices}
     symlink /dev/block/platform/${ro.boot.boot_devices} /dev/block/bootdevice
 
 on fs
