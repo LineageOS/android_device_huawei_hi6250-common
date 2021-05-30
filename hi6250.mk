@@ -26,7 +26,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Audio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml
+    $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration.xml
 
 # bfm
 PRODUCT_PACKAGES += \
@@ -46,11 +46,11 @@ PRODUCT_PACKAGES += \
 
 # Gps
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf
+    $(LOCAL_PATH)/gps/gps.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/gps.conf
 
 # Input
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/fingerprint.kl:system/usr/keylayout/fingerprint.kl
+    $(LOCAL_PATH)/keylayout/fingerprint.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/fingerprint.kl
 
 # LineageHw
 PRODUCT_PACKAGES += \
@@ -64,19 +64,19 @@ PRODUCT_PACKAGES += \
     nfc_nci.pn54x.default
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/nfc/libnfc_brcm_pra_L31.conf:system/etc/libnfc-brcm.conf \
-    $(LOCAL_PATH)/nfc/libnfc-nci.conf:system/etc/libnfc-nci.conf \
-    $(LOCAL_PATH)/nfc/libnfc_nxp_pra_L31.conf:system/etc/libnfc-nxp.conf \
-    $(LOCAL_PATH)/nfc/nfcscc_access.xml:system/etc/nfcscc_access.xml \
-    $(LOCAL_PATH)/nfc/nfcse_access.xml:system/etc/nfcse_access.xml \
+    $(LOCAL_PATH)/nfc/libnfc_brcm_pra_L31.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-brcm.conf \
+    $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
+    $(LOCAL_PATH)/nfc/libnfc_nxp_pra_L31.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nxp.conf \
+    $(LOCAL_PATH)/nfc/nfcscc_access.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/nfcscc_access.xml \
+    $(LOCAL_PATH)/nfc/nfcse_access.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/nfcse_access.xml \
 
 # Permissions
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml \
-    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
-    frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
-    frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
-    frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.fingerprint.xml \
+    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.telephony.gsm.xml \
+    frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.nfc.hce.xml \
+    frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.nfc.xml \
+    frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.android.nfc_extras.xml
 
 # Radio
 PRODUCT_PACKAGES += \
